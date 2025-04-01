@@ -18,8 +18,7 @@ def obtener_huella():
 
     return jsonify({"Certificado": fingerprint})
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080, debug=True)
+# No incluyas app.run() aquí, Render usará Gunicorn
 
 
 
